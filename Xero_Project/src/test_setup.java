@@ -34,8 +34,8 @@ public class test_setup extends Random_check {
 		wd.findElement(By.xpath("//button[@id='submitButton]']")).click();
 		
 		wd.findElement(By.xpath("//a[@id='Accounts']")).click();
-		Select dropdown=new Select(wd.findElement(By.xpath("//a[@id='Accounts']")));
-		dropdown.selectByVisibleText("Bank Accounts");
+		//Select dropdown=new Select(wd.findElement(By.xpath("//a[@id='Accounts']")));
+		//dropdown.selectByVisibleText("Bank Accounts");
 		
 		wd.findElement(By.xpath("//span[@class='text']")).click();
 		wd.findElement(By.xpath("//input[@id='xui-searchfield-1018-inputEl']")).clear();
