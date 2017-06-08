@@ -38,6 +38,7 @@ public class test_setup {
 		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//a[@id='Accounts']")));
 		wd.findElement(By.xpath("//a[@id='Accounts']")).click();
 		
+		wd.findElement(By.linkText("Bank Accounts")).click();
 		
 		//wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//a[@data-type='menu-focus']")));
 		String a=((WebElement) wd.findElements(By.tagName("li"))).getText();
