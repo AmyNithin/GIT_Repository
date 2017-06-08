@@ -3,7 +3,10 @@
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
+import org.openqa.selenium.support.ui.Wait;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class test_setup {
 	
@@ -13,17 +16,23 @@ public class test_setup {
 		System.setProperty("webdriver.gecko.driver", "C:\\Users\\Ammu\\Downloads\\geckodriver.exe");
 	
 		WebDriver wd=new FirefoxDriver();
+		WebDriverWait wait=new WebDriverWait(wd,60);
 		wd.get("https://www.xero.com/nz/");
+		
+		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//a[@class='btn btn-tertiary-alt global-ceiling-bar-btn']")));
 
 	
 		wd.findElement(By.xpath("//a[@class='btn btn-tertiary-alt global-ceiling-bar-btn']")).click();
-		
-		wd.findElement(By.xpath("//input[@id='email']")).clear(); 
+		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//input[@id='email']")));
+
+		wd.findElement(By.xpath("//input[@id='email']")).click(); 
 	    wd.findElement(By.xpath("//input[@id='email']")).sendKeys("amruthapb2@gmail.com");	
 		wd.findElement(By.xpath("//input[@id='password']")).clear();
 	    wd.findElement(By.xpath("//input[@id='password']")).sendKeys("wellington1");
-		wd.findElement(By.xpath("//button[@id='submitButton]']")).click();
+	    wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//button[@id='submitButton']")));
+		wd.findElement(By.xpath("//button[@id='submitButton']")).click();
 		
+		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//a[@id='Accounts']")));
 		wd.findElement(By.xpath("//a[@id='Accounts']")).click();
 		Select dropdown=new Select(wd.findElement(By.xpath("//a[@id='Accounts']")));
 		dropdown.selectByVisibleText("Bank Accounts");
