@@ -1,7 +1,10 @@
 
 
+import java.util.List;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
@@ -34,8 +37,20 @@ public class test_setup {
 		
 		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//a[@id='Accounts']")));
 		wd.findElement(By.xpath("//a[@id='Accounts']")).click();
-		Select dropdown=new Select(wd.findElement(By.xpath("//a[@id='Accounts']")));
-		dropdown.selectByVisibleText("Bank Accounts");
+		
+		
+		//wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//a[@data-type='menu-focus']")));
+		String a=((WebElement) wd.findElements(By.tagName("li"))).getText();
+		System.out.println("text is"+a);
+		//List<WebElement> links=wd.findElements(By.tagName("li"));
+		//for(WebElement link:links){
+		//	if(link.getText().equals("Bank Accounts"))
+		//		link.click();
+		//	break;
+		
+	//	}
+		
+		
 		
 		wd.findElement(By.xpath("//span[@class='text']")).click();
 		wd.findElement(By.xpath("//input[@id='xui-searchfield-1018-inputEl']")).clear();
@@ -59,4 +74,5 @@ public class test_setup {
 		
 		
 		
-			}}
+			
+	}}
