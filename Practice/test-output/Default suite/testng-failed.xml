@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Default suite]">
+  <test name="Default test(failed)">
+    <classes>
+      <class name="com.kitomba.kitomba_project.testScripts.TC001">
+        <methods>
+          <include name="testSetUp"/>
+          <include name="loginTest"/>
+          <include name="loginTestShutdown"/>
+        </methods>
+      </class> <!-- com.kitomba.kitomba_project.testScripts.TC001 -->
+    </classes>
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->

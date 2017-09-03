@@ -33,7 +33,7 @@ public class TestBase {
 	
 	public  void init() throws IOException{
 	
-	loadORProperties();
+	loadORProperties1();
 	loadAPPProperties();
 	selectBrowser(prop1.getProperty("browser"));
 	wd.get(prop1.getProperty("url"));
@@ -69,7 +69,7 @@ public class TestBase {
 return null;
 	}
 		
-public  void loadORProperties() throws IOException {
+public  void loadORProperties1() throws IOException {
 		
 		
 	file1=new File(System.getProperty("user.dir")+"\\src\\main\\java\\config\\OR.properties");
