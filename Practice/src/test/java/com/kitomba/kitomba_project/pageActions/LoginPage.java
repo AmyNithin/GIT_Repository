@@ -14,7 +14,7 @@ public class LoginPage extends TestBase {
 	public static Logger log=Logger.getLogger(LoginPage.class.getName());
 	
 	By Email=By.id("email");
-	By Password=By.id("password");
+	By Password=By.id("pass");
 
 
 

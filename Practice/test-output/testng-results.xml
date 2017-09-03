@@ -2,16 +2,16 @@
 <testng-results skipped="0" failed="1" total="1" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="9609" started-at="2017-09-03T02:13:08Z" finished-at="2017-09-03T02:13:18Z">
+  <suite name="Default suite" duration-ms="10316" started-at="2017-09-03T02:30:05Z" finished-at="2017-09-03T02:30:16Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="9609" started-at="2017-09-03T02:13:08Z" finished-at="2017-09-03T02:13:18Z">
+    <test name="Default test" duration-ms="10316" started-at="2017-09-03T02:30:05Z" finished-at="2017-09-03T02:30:16Z">
       <class name="com.kitomba.kitomba_project.testScripts.TC001">
-        <test-method status="PASS" signature="testSetUp()[pri:0, instance:com.kitomba.kitomba_project.testScripts.TC001@224edc67]" name="testSetUp" is-config="true" duration-ms="8530" started-at="2017-09-03T14:13:08Z" finished-at="2017-09-03T14:13:17Z">
+        <test-method status="PASS" signature="testSetUp()[pri:0, instance:com.kitomba.kitomba_project.testScripts.TC001@224edc67]" name="testSetUp" is-config="true" duration-ms="9124" started-at="2017-09-03T14:30:05Z" finished-at="2017-09-03T14:30:15Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testSetUp -->
-        <test-method status="FAIL" signature="loginTest()[pri:0, instance:com.kitomba.kitomba_project.testScripts.TC001@224edc67]" name="loginTest" duration-ms="898" started-at="2017-09-03T14:13:17Z" finished-at="2017-09-03T14:13:18Z">
+        <test-method status="FAIL" signature="loginTest()[pri:0, instance:com.kitomba.kitomba_project.testScripts.TC001@224edc67]" name="loginTest" duration-ms="897" started-at="2017-09-03T14:30:15Z" finished-at="2017-09-03T14:30:15Z">
           <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
               <![CDATA[Unable to locate element: #password
@@ -19,8 +19,8 @@ For documentation on this error, please visit: http://seleniumhq.org/exceptions/
 Build info: version: '3.5.3', revision: 'a88d25fe6b', time: '2017-08-29T12:42:44.417Z'
 System info: host: 'AMMU-PC', ip: '192.168.1.6', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_73'
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities [{moz:profile=C:\Users\Ammu\AppData\Local\Temp\rust_mozprofile.SjN65p9VDhEY, rotatable=false, timeouts={implicit=0, pageLoad=300000, script=30000}, pageLoadStrategy=normal, platform=XP, specificationLevel=0, moz:accessibilityChecks=false, acceptInsecureCerts=false, browserVersion=54.0.1, platformVersion=6.1, moz:processID=5852, browserName=firefox, javascriptEnabled=true, platformName=XP}]
-Session ID: fa21efdf-0ab1-4d74-b7e5-810e27cb60ba
+Capabilities [{moz:profile=C:\Users\Ammu\AppData\Local\Temp\rust_mozprofile.NZnVVPmKAJ2m, rotatable=false, timeouts={implicit=0, pageLoad=300000, script=30000}, pageLoadStrategy=normal, platform=XP, specificationLevel=0, moz:accessibilityChecks=false, acceptInsecureCerts=false, browserVersion=54.0.1, platformVersion=6.1, moz:processID=6024, browserName=firefox, javascriptEnabled=true, platformName=XP}]
+Session ID: 451173cb-f8b2-476c-a97d-925814675c3b
 *** Element info: {Using=id, value=password}]]>
             </message>
             <full-stacktrace>
@@ -29,8 +29,8 @@ For documentation on this error, please visit: http://seleniumhq.org/exceptions/
 Build info: version: '3.5.3', revision: 'a88d25fe6b', time: '2017-08-29T12:42:44.417Z'
 System info: host: 'AMMU-PC', ip: '192.168.1.6', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_73'
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities [{moz:profile=C:\Users\Ammu\AppData\Local\Temp\rust_mozprofile.SjN65p9VDhEY, rotatable=false, timeouts={implicit=0, pageLoad=300000, script=30000}, pageLoadStrategy=normal, platform=XP, specificationLevel=0, moz:accessibilityChecks=false, acceptInsecureCerts=false, browserVersion=54.0.1, platformVersion=6.1, moz:processID=5852, browserName=firefox, javascriptEnabled=true, platformName=XP}]
-Session ID: fa21efdf-0ab1-4d74-b7e5-810e27cb60ba
+Capabilities [{moz:profile=C:\Users\Ammu\AppData\Local\Temp\rust_mozprofile.NZnVVPmKAJ2m, rotatable=false, timeouts={implicit=0, pageLoad=300000, script=30000}, pageLoadStrategy=normal, platform=XP, specificationLevel=0, moz:accessibilityChecks=false, acceptInsecureCerts=false, browserVersion=54.0.1, platformVersion=6.1, moz:processID=6024, browserName=firefox, javascriptEnabled=true, platformName=XP}]
+Session ID: 451173cb-f8b2-476c-a97d-925814675c3b
 *** Element info: {Using=id, value=password}
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
@@ -78,7 +78,7 @@ Session ID: fa21efdf-0ab1-4d74-b7e5-810e27cb60ba
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginTest -->
-        <test-method status="PASS" signature="loginTestShutdown()[pri:0, instance:com.kitomba.kitomba_project.testScripts.TC001@224edc67]" name="loginTestShutdown" is-config="true" duration-ms="155" started-at="2017-09-03T14:13:18Z" finished-at="2017-09-03T14:13:18Z">
+        <test-method status="PASS" signature="loginTestShutdown()[pri:0, instance:com.kitomba.kitomba_project.testScripts.TC001@224edc67]" name="loginTestShutdown" is-config="true" duration-ms="269" started-at="2017-09-03T14:30:15Z" finished-at="2017-09-03T14:30:16Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginTestShutdown -->
