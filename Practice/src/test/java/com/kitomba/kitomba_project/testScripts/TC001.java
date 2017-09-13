@@ -12,7 +12,7 @@ import testBase.TestBase;
 
 public class TC001 extends TestBase{
 
-static LoginPage loginpage;
+LoginPage loginpage;
 
 
 @BeforeClass
